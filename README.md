@@ -4,9 +4,9 @@
 * Steps to create a private Docker Hub repository.
 * Clean placeholder-based Docker commands.
 
----
 
-```markdown
+
+
 # 🐳 Docker Test App - Flask Hello World
 
 This is a simple Flask web application containerized using Docker and pushed to Docker Hub. It is designed to help beginners understand how to containerize an app and publish it on Docker Hub.
@@ -15,28 +15,25 @@ This is a simple Flask web application containerized using Docker and pushed to 
 
 ## 📁 Project Structure
 
-```
+
 
 test-app/
 ├── app.py
 ├── requirements.txt
 └── Dockerfile
 
-````
 
----
 
 ## 🛠️ Steps to Build and Push the Docker Image
+1. Build Docker Image
 
-### 1. Build Docker Image
 
 Run the following command in the project directory:
 
 ```bash
 docker build -t my-app .
-````
+```
 
----
 
 ### 2. Login to Docker Hub via Browser
 
@@ -44,14 +41,9 @@ docker build -t my-app .
 2. Log in with your credentials.
 3. Click on your **profile icon** → **Account Settings**
 4. Go to **Security** → **Personal Access Tokens**
-5. Click **Create New Access Token**, give it a name, and copy the token.
-6. Run:
+5. Click **Create New Access Token**, give it a name, and  follow the instructions in that page to login with dockerhub
 
-```bash
-docker login
-```
 
-When prompted:
 
 * Use your Docker **username**
 * Paste the **token** as password
